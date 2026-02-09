@@ -40,9 +40,8 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  /* px-6 */
-  padding-right: 1.5rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
   max-width: 1280px;
   /* Force max width to 1280px for better readability */
 }
@@ -95,12 +94,6 @@ p {
 .card {
   border-radius: 0.75rem;
   box-shadow: 0 6px 22px rgba(2, 6, 23, 0.06);
-}
-
-/* Slightly larger default container padding for airy layout */
-.container {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 
 /* Tighter, friendlier progress bar */
