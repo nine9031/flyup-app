@@ -33,10 +33,10 @@ const Hero: React.FC = () => {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row items-center gap-4 mb-16 w-full sm:w-auto">
-                    <button className="w-full sm:w-auto px-8 py-3.5 bg-blue-600 text-white text-base font-semibold rounded-full hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 hover:-translate-y-1">
+                    <button className="btn btn-primary w-full sm:w-auto px-8">
                         เริ่มต้นสร้างโปรเจกต์
                     </button>
-                    <button className="w-full sm:w-auto px-8 py-3.5 bg-white text-slate-600 border border-slate-200 text-base font-semibold rounded-full hover:bg-slate-50 hover:border-slate-300 transition-colors">
+                    <button className="btn btn-outline w-full sm:w-auto px-8">
                         ดูโปรเจกต์ตัวอย่าง
                     </button>
                 </div>

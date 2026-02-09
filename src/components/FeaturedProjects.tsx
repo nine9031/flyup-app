@@ -52,7 +52,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
     const progressPercent = (project.currentFunding / project.fundingGoal) * 100;
 
     return (
-        <div className="flex flex-col bg-white rounded-xl border border-slate-200 overflow-hidden hover:shadow-lg transition-all duration-300">
+        <div className="group flex flex-col bg-white card border border-slate-100 overflow-hidden hover:shadow-xl transition-transform duration-300 hover:-translate-y-1">
             {/* Image Container - Fixed aspect ratio */}
             <div className="relative aspect-video w-full overflow-hidden bg-slate-100">
                 <img
@@ -82,10 +82,11 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                         <span className="text-blue-600">{Math.round(progressPercent)}%</span>
                         <span className="text-slate-400">{project.daysLeft} วันเหลือ</span>
                     </div>
-                    <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
+
+                    <div className="progress-track">
                         <div
-                            className="h-full bg-blue-600 rounded-full"
-                            style={{ width: `${progressPercent}%` }}
+                            className="progress-fill"
+                            style={{ width: `${Math.min(progressPercent, 100)}%` }}
                         />
                     </div>
 
@@ -122,7 +123,7 @@ const FeaturedProjects: React.FC = () => {
 
                 {/* View All Button */}
                 <div className="mt-12 text-center">
-                    <button className="px-6 py-2.5 bg-white border border-slate-200 text-slate-600 text-sm font-semibold rounded-full hover:bg-slate-50 hover:border-blue-200 hover:text-blue-600 transition-all">
+                    <button className="btn btn-outline">
                         ดูโปรเจกต์ทั้งหมด
                     </button>
                 </div>

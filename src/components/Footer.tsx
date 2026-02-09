@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                                 placeholder="อีเมล"
                                 className="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-900 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
                             />
-                            <button className="bg-blue-600 text-white rounded-lg px-4 py-2 font-medium hover:bg-blue-700 transition-colors whitespace-nowrap">
+                            <button className="btn btn-primary">
                                 ติดตาม
                             </button>
                         </form>

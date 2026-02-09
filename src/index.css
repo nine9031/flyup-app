@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 /* Custom Font */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 :root {
   --color-primary: #2563eb;
   /* Blue 600 */
   --color-primary-dark: #1e40af;
   /* Blue 800 */
-  --font-thai: 'IBM Plex Sans Thai', sans-serif;
-  --font-inter: 'Inter', sans-serif;
+  --font-thai: "IBM Plex Sans Thai", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 @theme {
-  --font-sans: "Inter", "IBM Plex Sans Thai", ui-sans-serif, system-ui, sans-serif;
+  --font-sans:
+    "Inter", "IBM Plex Sans Thai", ui-sans-serif, system-ui, sans-serif;
 }
 
 /* Global Reset & Base Styles */
@@ -53,4 +54,63 @@ h1 {
 
 p {
   line-height: 1.6;
+}
+
+/* Utility: Buttons & Cards */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.12);
+}
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: #fff;
+  color: var(--color-primary);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+}
+.btn-outline:hover {
+  background: rgba(37, 99, 235, 0.04);
+  transform: translateY(-2px);
+}
+
+.card {
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 22px rgba(2, 6, 23, 0.06);
+}
+
+/* Slightly larger default container padding for airy layout */
+.container {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+/* Tighter, friendlier progress bar */
+.progress-track {
+  background-color: #f1f5f9;
+  border-radius: 9999px;
+  height: 0.5rem;
+}
+.progress-fill {
+  background-color: var(--color-primary);
+  height: 100%;
+  border-radius: 9999px;
 }

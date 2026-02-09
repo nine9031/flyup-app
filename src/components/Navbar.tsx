@@ -24,10 +24,10 @@ const Navbar: React.FC = () => {
 
                 {/* Auth Buttons */}
                 <div className="hidden md:flex items-center gap-3 flex-shrink-0">
-                    <button className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">
+                    <button className="btn btn-outline text-sm">
                         เข้าสู่ระบบ
                     </button>
-                    <button className="px-5 py-2 bg-blue-600 text-white text-sm font-bold rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20 active:scale-95">
+                    <button className="btn btn-primary text-sm">
                         สมัครสมาชิก
                     </button>
                 </div>
