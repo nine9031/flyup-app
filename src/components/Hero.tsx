@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
     return (
-        <section id="home" className="relative pt-32 pb-20 overflow-hidden bg-white scroll-mt-20">
+        <section id="home" className="relative pt-20 pb-24 overflow-hidden bg-white scroll-mt-20">
             {/* Background Gradients */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-blue-50/50 rounded-full blur-[100px] -z-10"></div>
@@ -20,13 +20,21 @@ const Hero: React.FC = () => {
                 </div>
 
                 {/* Headline */}
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 tracking-tight mb-6 max-w-4xl">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
+               font-bold text-slate-900 
+               tracking-tight leading-[1.15] 
+               mb-8 max-w-4xl">
                     เปลี่ยนไอเดียคุณ <br className="hidden sm:block" />
                     <span className="text-blue-600">ให้กลายเป็นธุรกิจจริง</span>
                 </h1>
 
                 {/* Subheadline */}
-                <p className="text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+                <p className="text-lg sm:text-xl 
+              text-slate-500 
+              max-w-2xl mx-auto 
+              mb-12 
+              leading-[1.8] 
+              font-light">
                     พื้นที่ระดมทุนสำหรับ Startup หน้าใหม่จากรั้วมหาวิทยาลัย
                     เปิดโอกาสให้คุณได้แสดงศักยภาพและค้นหาพาร์ทเนอร์
                 </p>

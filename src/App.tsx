@@ -12,7 +12,7 @@ function App() {
         <Hero />
         <Testimonials />
         <FeaturedProjects />
-      </main>
+      </main className="pt-20">
       <Footer />
     </div>
   )

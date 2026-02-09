@@ -102,7 +102,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 
 const FeaturedProjects: React.FC = () => {
     return (
-        <section id="projects" className="py-20 bg-slate-50 border-y border-slate-100">
+        <section id="projects" className="py-24 bg-slate-50 border-y border-slate-100 scroll-mt-24">
             <div className="container px-4 sm:px-6">
                 {/* Section Header */}
                 <div className="text-center mb-12 max-w-3xl mx-auto">

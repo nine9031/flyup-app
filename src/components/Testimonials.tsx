@@ -36,7 +36,7 @@ const Testimonials: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-        <section id="testimonials" className="py-24 bg-white">
+        <section id="testimonials" className="py-28 bg-white scroll-mt-24">
             <div className="container px-4 sm:px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
