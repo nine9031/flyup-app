@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
     return (
-        <section id="home" className="relative pt-32 pb-20 overflow-hidden bg-white">
+        <section id="home" className="relative pt-32 pb-20 overflow-hidden bg-white scroll-mt-20">
             {/* Background Gradients */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-blue-50/50 rounded-full blur-[100px] -z-10"></div>
